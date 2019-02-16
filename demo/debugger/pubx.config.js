@@ -2,6 +2,7 @@ import { Pubx } from 'pubx';
 import { WasmBoy, WasmBoyUpdateCanvas } from './wasmboy';
 
 import devtoolsDetect from 'devtools-detect';
+const devtoolsDetect = { open: true };
 
 // devtools change for mobile
 window.addEventListener('devtoolschange', e => {

@@ -1,3 +1,10 @@
+import { WasmBoy as WasmBoyImport } from '../../dist/wasmboy.wasm.esm';
+export const WasmBoy = WasmBoyImport;
+
+console.log('only importing wasmboy in benchmark index');
+
+/*
+
 import { h, render, Component } from 'preact';
 
 import { WasmBoy } from './wasmboy';
@@ -117,3 +124,5 @@ window.addEventListener('orientationchange', () => {
     layoutChangeThrottle = undefined;
   }, 500);
 });
+
+*/
