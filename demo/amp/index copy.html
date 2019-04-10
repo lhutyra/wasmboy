@@ -118,17 +118,34 @@
       }
     </style>
 
-    <script async src="https://torch2424-amp-glitch-express.glitch.me/ampscript/v0.js"></script>
-    <script async src="https://torch2424-amp-glitch-express.glitch.me/ampscript/amp-script.js"></script>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async src="https://torch2424-amp-glitch-express.glitch.me/amp-script.js"></script>
   </head>
 
   <body>
     <!-- need to serve cors because of new amp-script requirement -->
     <amp-script layout="container" src="<%BUNDLE%>">
       <div id="root">
-        <div id="child"></div>
-        <button id="button">Some Button</button>
-        <input />
+        <h1>⚡wAsMP Boy⚡</h1>
+        <p id="description">
+          <a href="https://github.com/torch2424/wasmBoy" target="_blank">WasmBoy</a> TS Core Running within
+          <a href="https://github.com/ampproject/amphtml/tree/master/extensions/amp-script" target="_blank">amp-script</a> and
+          <a href="https://github.com/ampproject/worker-dom" target="_blank">Worker DOM</a>. Runs slow due to experimenal amp-script /
+          Worker DOM limitations. Which is worked around using a Pixel-by-pixel RGBA ImageData Array to SVG solution.
+
+          <b>NOTE:</b>
+          Play on desktop. You must click the game to control it.
+
+          <b>You must toggle the amp-script experiment:</b>
+          `AMP.toggleExperiment('amp-script')` in Dev tools console.
+
+          <b>Lifted the <a href="https://github.com/ampproject/amphtml/pull/20427" target="_blank">AMP Script Size restriction</a></b>
+
+          <b>ROM played is: <a href="http://tangramgames.dk/tobutobugirl/" target="_blank">Tobu Tobu Girl</a></b>
+
+          <b>Controls:</b>
+          Up,Down,Left,Right = Arrow Keys, WASD A = Z B = X Start = Enter Select = Shift Play/Pause = Space
+        </p>
       </div>
     </amp-script>
   </body>
